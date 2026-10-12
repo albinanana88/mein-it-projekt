@@ -33,6 +33,16 @@ Hier dokumentiere ich meine praktischen Schritte, Systemkonfigurationen und Auto
 4. **Skripting:** Geplante Bash-Skripte für automatisierte Backups und Statusprüfungen.
 
 ---
+## 🗂️ Homelab: Samba-Dateiserver (VirtualBox)
+* **Ziel:** Plattformübergreifender Dateiaustausch im lokalen Heimnetzwerk.
+* **Virtualisierung:** Ubuntu-Server in Oracle VM VirtualBox (Netzwerkbrücke / Bridged Adapter).
+* **Konfiguration & Freigabe:** 
+  * Samba (`smbd`) installiert und über `/etc/samba/smb.conf` konfiguriert.
+  * POSIX-Rechte gesetzt (`chown`, `chmod 0775`) für `/srv/samba/share`.
+  * Dienststeuerung und Autostart via `systemctl`.
+* **Ergebnis:** Erfolgreicher Zugriff über das SMB-Protokoll von Windows- und Linux-Clients.
+
+---
 
 ## 📬 Kontakt
 
