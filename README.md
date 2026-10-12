@@ -52,6 +52,18 @@ Ein Bash-Skript zur schnellen Diagnose wichtiger Systemressourcen:
 * **Netzwerkkonnektivität (`ping`):** Verbindungstest mit Fallback-Prüfung (`ONLINE` / `OFFLINE`).
 * **Ausführung:** `chmod +x scripts/system_health.sh && ./scripts/system_health.sh`
 
+---
+
+## 3. Automatisierte Datensicherung mit Rotation (Bash-Backup)
+Ein robustes Bash-Skript zur regelmäßigen Archivierung und automatischen Bereinigung veralteter Sicherungen:
+* **Archivierung (`tar`):** Gzip-komprimierte Sicherung wichtiger Projektdateien.
+* **Dynamische Dateinamen (`date`):** Eindeutige Zeitstempel zur Versionsverfolgung (`backup_YYYY-MM-DD_HH-MM-SS.tar.gz`).
+* **Automatische Rotation (`find`):** Bereinigung von Archiven, die älter als 7 Tage sind, um Speicherplatz zu sparen.
+* **Fehlerbehandlung:** Überprüfung des Exit-Codes (`$?`) für zuverlässige Statusmeldungen.
+* **Ausführung:**
+  ```bash
+  chmod +x scripts/backup.sh
+  ./scripts/backup.sh
 ## 📬 Kontakt
 
 * **GitHub:** [albinanana88](https://github.com/albinanana88)
