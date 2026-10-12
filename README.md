@@ -34,7 +34,7 @@ Hier dokumentiere ich meine praktischen Schritte, Systemkonfigurationen und Auto
 
 ---
 
-## 🗂️ Homelab: Samba-Dateiserver (VirtualBox)
+## 1. Homelab: Samba-Dateiserver (VirtualBox)
 * **Ziel:** Plattformübergreifender Dateiaustausch im lokalen Heimnetzwerk.
 * **Virtualisierung:** Ubuntu-Server in Oracle VM VirtualBox (Netzwerkbrücke / Bridged Adapter).
 * **Konfiguration & Freigabe:** 
