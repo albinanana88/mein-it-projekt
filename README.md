@@ -64,6 +64,20 @@ Ein robustes Bash-Skript zur regelmäßigen Archivierung und automatischen Berei
   ```bash
   chmod +x scripts/backup.sh
   ./scripts/backup.sh
+
+---
+
+## 4. Lokaler Netzwerk-Scanner (Ping Sweep)
+Ein schnelles Bash-Skript zur Erkennung aktiver Geräte im lokalen Netzwerk:
+* **Parallele ICMP-Prüfung:** Asynchrone Ausführung im Hintergrund (`&`) mit `wait`-Synchronisation für maximale Geschwindigkeit.
+* **Netzwerk-Diagnose:** Schnelle Identifikation erreichbarer Hosts im Subnetz (`192.168.178.0/24`).
+* **Kompakte Ausgabe:** Zeigt gezielt aktive IP-Adressen (ONLINE) an.
+* **Ausführung:**
+  ```bash
+  chmod +x scripts/networks_scan.sh
+  ./scripts/networks_scan.sh
+
+
 ## 📬 Kontakt
 
 * **GitHub:** [albinanana88](https://github.com/albinanana88)
