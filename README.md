@@ -33,6 +33,7 @@ Hier dokumentiere ich meine praktischen Schritte, Systemkonfigurationen und Auto
 4. **Skripting:** Geplante Bash-Skripte für automatisierte Backups und Statusprüfungen.
 
 ---
+
 ## 🗂️ Homelab: Samba-Dateiserver (VirtualBox)
 * **Ziel:** Plattformübergreifender Dateiaustausch im lokalen Heimnetzwerk.
 * **Virtualisierung:** Ubuntu-Server in Oracle VM VirtualBox (Netzwerkbrücke / Bridged Adapter).
@@ -43,6 +44,13 @@ Hier dokumentiere ich meine praktischen Schritte, Systemkonfigurationen und Auto
 * **Ergebnis:** Erfolgreicher Zugriff über das SMB-Protokoll von Windows- und Linux-Clients.
 
 ---
+
+## 2. Automatisierte Systemüberwachung (Bash Health-Check)
+Ein Bash-Skript zur schnellen Diagnose wichtiger Systemressourcen:
+* **Festplattenbelegung (`df`):** Schwellenwert-Prüfung (>80% löst Warnung aus).
+* **RAM-Auslastung (`free`):** Dynamische Prozentberechnung von genutztem Speicher.
+* **Netzwerkkonnektivität (`ping`):** Verbindungstest mit Fallback-Prüfung (`ONLINE` / `OFFLINE`).
+* **Ausführung:** `chmod +x scripts/system_health.sh && ./scripts/system_health.sh`
 
 ## 📬 Kontakt
 
